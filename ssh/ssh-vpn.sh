@@ -271,7 +271,7 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 # menu
-wget -O menu "https://raw.githubusercontent.com/Andyyuda/v3/main/menu/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu.sh"
 wget -O menu-trial "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-trial.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-vmess.sh"
 wget -O menu-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-vless.sh"
@@ -283,8 +283,8 @@ wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-ssh.sh"
-wget -O usernew "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/trial.sh"
+wget -O usernew "https://raw.githubusercontent.com/Andyyuda/ver4/main/ssh/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/Andyyuda/ver4/main/ssh/trial.sh"
 wget -O renew "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/renew.sh"
 wget -O hapus "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/hapus.sh"
 wget -O cek "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/cek.sh"
