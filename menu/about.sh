@@ -4,7 +4,7 @@ echo "Checking VPS"
 aureb=$(cat /home/re_otm)
 clear
 echo " "
-echo "===============-[ SCRIPT ARTA MAULANA VPN ]-=============="
+echo "===============-[ SCRIPT ANDY YUDA VPN ]-=============="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
