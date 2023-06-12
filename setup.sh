@@ -261,7 +261,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By ARTA MAULANA ]-==============="
+echo "===============-[ Script Created By Andy Yuda ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
