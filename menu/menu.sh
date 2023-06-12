@@ -287,7 +287,7 @@ echo -e "     ${BICyan}[${BIWhite}01${BICyan}] SSH     ${BICyan}[${BIYellow}Menu
 echo -e "     ${BICyan}[${BIWhite}02${BICyan}] VMESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}07${BICyan}] BACKUP    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan}   │"
 echo -e "     ${BICyan}[${BIWhite}03${BICyan}] VLESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}08${BICyan}] ADD-HOST      ${NC}" "${BICyan}     │"
 echo -e "     ${BICyan}[${BIWhite}04${BICyan}] TROJAN  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}09${BICyan}] RUNNING             │"
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}10${BICyan}] SET REBOOT${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan}   │${NC}"
+echo -e "     ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}10${BICyan}] INSTAL UDP${BICyan}[${BIYellow}INSTAL${BICyan}]${NC}" "${BICyan}   │${NC}"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan}                  MENU TAMBAHAN${NC} "
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
@@ -317,9 +317,13 @@ case $opt in
 6) clear ; menu-trial ;;
 7) clear ; menu-bckp ;;
 8) clear ; add-host ;;
-9) clear ; certv2ray ;;
+9) clear ; running ;;
 10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
 6969) clear ; wget https://raw.githubusercontent.com/artanodrop/v4/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
+11) clear ; cf ;;
+12) clear ; up ;;
+13) clear ; udp ;;
+14) clear ; clearlog ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
