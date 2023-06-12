@@ -134,7 +134,7 @@ mkdir -p /home/vps/public_html
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/artanodrop/v4/main/ssh/newudpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/Andyyuda/v3/main/ssh/newudpgw"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -271,7 +271,7 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 # menu
-wget -O menu "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/Andyyuda/v3/main/menu/menu.sh"
 wget -O menu-trial "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-trial.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-vmess.sh"
 wget -O menu-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-vless.sh"
@@ -279,11 +279,12 @@ wget -O running "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/running
 wget -O clearcache "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-trgo.sh"
 wget -O menu-trojan "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-trojan.sh"
+wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-ssh.sh"
-wget -O usernew "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/trial.sh"
+wget -O usernew "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/trial.sh"
 wget -O renew "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/renew.sh"
 wget -O hapus "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/hapus.sh"
 wget -O cek "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/cek.sh"
@@ -321,6 +322,7 @@ wget -O backup "https://raw.githubusercontent.com/Andyyuda/v4/main/backup/backup
 wget -O restore "https://raw.githubusercontent.com/Andyyuda/v4/main/backup/restore.sh"
 
 wget -O jam "https://raw.githubusercontent.com/Andyyuda/v4/main/jam.sh"
+wget -O up "https://raw.githubusercontent.com/Andyyuda/ver3/main/up.sh"
 
 chmod +x menu
 chmod +x menu-trial
@@ -342,6 +344,8 @@ chmod +x delete
 chmod +x autokill
 chmod +x ceklim
 chmod +x tendang
+chmod +x cf
+chmod +x up
 
 chmod +x menu-set
 chmod +x menu-domain
