@@ -324,8 +324,8 @@ wget -O backup "https://raw.githubusercontent.com/Andyyuda/v4/main/backup/backup
 wget -O restore "https://raw.githubusercontent.com/Andyyuda/v4/main/backup/restore.sh"
 
 wget -O jam "https://raw.githubusercontent.com/Andyyuda/v4/main/jam.sh"
-wget -O up "https://raw.githubusercontent.com/Andyyuda/ver4/main/up.sh"
-wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/ver3/main/up.sh" && chmod +x /usr/bin/up
+wget -O up "https://raw.githubusercontent.com/Andyyuda/v4/main/up.sh"
+wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/v4/main/up.sh" && chmod +x /usr/bin/up
 
 chmod +x menu
 chmod +x menu-trial
