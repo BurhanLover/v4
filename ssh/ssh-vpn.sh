@@ -283,8 +283,6 @@ wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-ssh.sh"
-wget -O usernew "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/trial.sh"
 wget -O renew "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/renew.sh"
 wget -O hapus "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/hapus.sh"
 wget -O cek "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/cek.sh"
@@ -293,6 +291,9 @@ wget -O delete "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/delete.sh
 wget -O autokill "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/autokill.sh"
 wget -O ceklim "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/tendang.sh"
+wget -O slow "https://raw.githubusercontent.com/Andyyuda/ver3/main/slow.sh"
+wget -O usernew "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/trial.sh"
 
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-set.sh"
@@ -310,6 +311,7 @@ wget -O bw "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/bw.sh"
 # change port
 wget -O port-ssl "https://raw.githubusercontent.com/Andyyuda/v4/main/port/port-ssl.sh"
 wget -O port-ovpn "https://raw.githubusercontent.com/Andyyuda/v4/main/port/port-ovpn.sh"
+wget -O genssl "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/genssl.sh"
 
 
 wget -O xp "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/xp.sh"
@@ -323,6 +325,7 @@ wget -O restore "https://raw.githubusercontent.com/Andyyuda/v4/main/backup/resto
 
 wget -O jam "https://raw.githubusercontent.com/Andyyuda/v4/main/jam.sh"
 wget -O up "https://raw.githubusercontent.com/Andyyuda/ver3/main/up.sh"
+wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/ver3/main/up.sh" && chmod +x /usr/bin/up
 
 chmod +x menu
 chmod +x menu-trial
@@ -346,6 +349,7 @@ chmod +x ceklim
 chmod +x tendang
 chmod +x cf
 chmod +x up
+chmod +x genssl
 
 chmod +x menu-set
 chmod +x menu-domain
