@@ -31,3 +31,6 @@ chmod +x slow
 chmod +x menu-ssh
 chmod +x usernew
 chmod +x trial
+echo -e " [INFO] Update Successfully"
+sleep 2
+exit
