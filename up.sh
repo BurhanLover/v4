@@ -31,6 +31,7 @@ chmod +x slow
 chmod +x menu-ssh
 chmod +x usernew
 chmod +x trial
+chmod +x genssl
 echo -e " [INFO] Update Successfully"
 sleep 2
 exit
