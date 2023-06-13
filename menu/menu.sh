@@ -263,6 +263,7 @@ echo -e "${BIYellow}□ Operating System    = ${GREEN}$( cat /etc/os-release | g
 echo -e "${BIYellow}□ Current Domain      = ${GREEN}$( cat /etc/xray/domain )${NC}"
 echo -e "${BIYellow}□ NS Domain           = ${GREEN}$(cat /root/nsdomain)${NC}"
 echo -e "${BIYellow}□ Jumlah Ram          = ${GREEN}${totalram}MB"
+echo -e "${BIYellow}□ Server Resource     = $uram / $tram"
 echo -e "${BIYellow}□ CPU Usage           = $cpu_usage"
 echo -e "${BIYellow}□ Clients Name        = ${GREEN}$Name${NC}"
 echo -e "${BIYellow}□ Expired Script VPS  = ${GREEN}$Exp${NC}"
