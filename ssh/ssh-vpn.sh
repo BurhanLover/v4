@@ -349,6 +349,7 @@ chmod +x ceklim
 chmod +x tendang
 chmod +x cf
 chmod +x up
+chmod +x slow
 chmod +x genssl
 
 chmod +x menu-set
