@@ -286,14 +286,13 @@ echo -e "     ${BICyan}[${BIWhite}01${BICyan}] SSH     ${BICyan}[${BIYellow}Menu
 echo -e "     ${BICyan}[${BIWhite}02${BICyan}] VMESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}07${BICyan}] BACKUP    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan}   │"
 echo -e "     ${BICyan}[${BIWhite}03${BICyan}] VLESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}08${BICyan}] ADD-HOST      ${NC}" "${BICyan}     │"
 echo -e "     ${BICyan}[${BIWhite}04${BICyan}] TROJAN  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}09${BICyan}] RUNNING             │"
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}10${BICyan}] INSTAL UDP${BICyan}[${BIYellow}INSTAL${BICyan}]${NC}" "${BICyan}   │${NC}"
+echo -e "     ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}10${BICyan}] INSTAL UDP${BICyan}[${BIYellow}INSTAL${BICyan}]${NC}" "${BICyan} │${NC}"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan}                  MENU TAMBAHAN${NC} "
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "     ${BICyan}[${BIWhite}11${BICyan}] DOMAIN FREE${NC} "
 echo -e "     ${BICyan}[${BIWhite}12${BICyan}] UPDATE MENU${NC} "
-echo -e "     ${BICyan}[${BIWhite}13${BICyan}] INSTAL UDP${NC} "
-echo -e "     ${BICyan}[${BIWhite}14${BICyan}] GANTI NS DOMAIN${NC} "
+echo -e "     ${BICyan}[${BIWhite}13${BICyan}] GANTI NS DOMAIN${NC} "
 echo -e "     ${BICyan}[${BIWhite}99${BICyan}] CLEAR SAMPAH${NC} "
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
@@ -321,7 +320,7 @@ case $opt in
 6969) clear ; wget https://raw.githubusercontent.com/artanodrop/v4/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
 11) clear ; cf ;;
 12) clear ; up ;;
-13) clear ; udp ;;
+13) clear ; slow ;;
 14) clear ; clearlog ;;
 0) clear ; menu ;;
 x) exit ;;
