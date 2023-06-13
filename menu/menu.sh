@@ -327,7 +327,7 @@ case $opt in
 11) clear ; cf ;;
 12) clear ; up ;;
 13) clear ; slow ;;
-14) clear ; clearlog ;;
+14) clear ; clearcache ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
