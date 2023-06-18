@@ -11,6 +11,7 @@ rm -rf user-unlock
 # download script
 cd /usr/bin
 # menu
+curl -sS https://raw.githubusercontent.com/Andyyuda/permission/main/ipmini
 wget -O user-lock "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/user-lock.sh"
 wget -O user-unlock "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/user-unlock.sh"
 # chomad
