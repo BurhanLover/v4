@@ -5,6 +5,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 echo -e " [INFO] Downloading Update File"
 sleep 2
 # hapus menu
+rm -rf ipmini
 rm -rf user-lock
 rm -rf user-unlock
 # download script
@@ -13,6 +14,7 @@ cd /usr/bin
 wget -O user-lock "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/user-lock.sh"
 wget -O user-unlock "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/user-unlock.sh"
 # chomad
+chmod +x ipmini
 wget -q -O /usr/bin/user-lock "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/user-lock.sh" && chmod +x /usr/bin/user-lock
 wget -q -O /usr/bin/user-unlock "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/user-unlock.sh" && chmod +x /usr/bin/user-unlock
 echo -e " [INFO] Update Successfully"
