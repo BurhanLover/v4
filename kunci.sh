@@ -5,6 +5,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 echo -e " [INFO] Downloading Update File"
 sleep 2
 # hapus menu
+rm -rf kunci
 rm -rf ipmini
 rm -rf user-lock
 rm -rf user-unlock
