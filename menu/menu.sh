@@ -299,8 +299,8 @@ echo -e "${BICyan} ┌───────────────────�
 echo -e "     ${BICyan}[${BIWhite}11${BICyan}] DOMAIN FREE${NC} "
 echo -e "     ${BICyan}[${BIWhite}12${BICyan}] UPDATE MENU${NC} "
 echo -e "     ${BICyan}[${BIWhite}13${BICyan}] GANTI NS DOMAIN${NC} "
-echo -e "     ${BICyan}[${BIWhite}14${BICyan}] LOCK AKUN SSH${NC} "
-echo -e "     ${BICyan}[${BIWhite}15${BICyan}] UNLOCK AKUN SSH${NC} "
+echo -e "     ${BICyan}[${BIWhite}14${RED}] LOCK AKUN SSH${NC} "
+echo -e "     ${BICyan}[${BIWhite}15${RED}] UNLOCK AKUN SSH${NC} "
 echo -e "     ${BICyan}[${BIWhite}16${BICyan}] CLEAR SAMPAH${NC} "
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
@@ -337,7 +337,6 @@ case $opt in
 8) clear ; add-host ;;
 9) clear ; running ;;
 10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
-6969) clear ; wget https://raw.githubusercontent.com/artanodrop/v4/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
 11) clear ; cf ;;
 12) clear ; up ;;
 13) clear ; slow ;;
