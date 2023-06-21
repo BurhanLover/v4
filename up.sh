@@ -19,6 +19,7 @@ cd /usr/bin
 # menu
 wget -O menu "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu.sh"
 wget -O genssl "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/genssl.sh"
+wget -O up "https://raw.githubusercontent.com/Andyyuda/v4/main/up.sh"
 wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
 wget -O slow "https://raw.githubusercontent.com/Andyyuda/ver3/main/slow.sh"
 wget -O usernew "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/usernew.sh"
@@ -26,8 +27,9 @@ wget -O trial "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/trial.sh
 wget -O menus-ssh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menus-ssh.sh"
 
 # chomad
-wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/ver3/main/up.sh" && chmod +x /usr/bin/up
+wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/v4/main/up.sh" && chmod +x /usr/bin/up
 wget -q -O /usr/bin/cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh" && chmod +x /usr/bin/cf
+wget -q -O /usr/bin/slow "https://raw.githubusercontent.com/Andyyuda/ver3/main/slow.sh" && chmod +x /usr/bin/slow
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu.sh" && chmod +x /usr/bin/menu
 wget -q -O /usr/bin/menus-ssh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menus-ssh.sh" && chmod +x /usr/bin/menus-ssh
 chmod +x slow
