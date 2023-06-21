@@ -299,7 +299,9 @@ echo -e "${BICyan} ┌───────────────────�
 echo -e "     ${BICyan}[${BIWhite}11${BICyan}] DOMAIN FREE${NC} "
 echo -e "     ${BICyan}[${BIWhite}12${BICyan}] UPDATE MENU${NC} "
 echo -e "     ${BICyan}[${BIWhite}13${BICyan}] GANTI NS DOMAIN${NC} "
-echo -e "     ${BICyan}[${BIWhite}14${BICyan}] CLEAR SAMPAH${NC} "
+echo -e "     ${BICyan}[${BIWhite}14${BICyan}] LOCK AKUN SSH${NC} "
+echo -e "     ${BICyan}[${BIWhite}15${BICyan}] UNLOCK AKUN SSH${NC} "
+echo -e "     ${BICyan}[${BIWhite}16${BICyan}] CLEAR SAMPAH${NC} "
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │$NC ${BICyan}HARI ini${NC}: ${red}$ttoday$NC ${BICyan}KEMARIN${NC}: ${red}$tyest$NC ${BICyan}BULAN${NC}: ${red}$tmon$NC $NC"
@@ -339,7 +341,9 @@ case $opt in
 11) clear ; cf ;;
 12) clear ; up ;;
 13) clear ; slow ;;
-14) clear ; clearcache ;;
+14) clear ; user-lock ;;
+15) clear ; user-unlock ;;
+16) clear ; clearcache ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
