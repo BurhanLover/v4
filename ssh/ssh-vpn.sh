@@ -282,7 +282,7 @@ wget -O menu-trojan "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/men
 wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
 
 # menu ssh ovpn
-wget -O menu-ssh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-ssh.sh"
+wget -O menu-sshh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-sshh.sh"
 wget -O renew "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/renew.sh"
 wget -O hapus "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/hapus.sh"
 wget -O cek "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/cek.sh"
@@ -294,6 +294,8 @@ wget -O tendang "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/tendang.
 wget -O slow "https://raw.githubusercontent.com/Andyyuda/ver3/main/slow.sh"
 wget -O usernew "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/trial.sh"
+wget -O user-lock "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/user-lock.sh"
+wget -O user-unlock "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/user-unlock.sh"
 
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-set.sh"
@@ -336,7 +338,7 @@ chmod +x clearcache
 chmod +x menu-trgo
 chmod +x menu-trojan
 
-chmod +x menu-ssh
+chmod +x menu-sshh
 chmod +x usernew
 chmod +x trial
 chmod +x renew
@@ -347,6 +349,8 @@ chmod +x delete
 chmod +x autokill
 chmod +x ceklim
 chmod +x tendang
+chmod +x user-lock
+chmod +x user-unlock
 chmod +x cf
 chmod +x up
 chmod +x slow
