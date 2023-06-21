@@ -118,6 +118,8 @@ echo -e "     ${BICyan}[${BIWhite}06${BICyan}] List Member SSH & OpenVPN     "
 echo -e "     ${BICyan}[${BIWhite}07${BICyan}] Delete User Expired SSH & OpenVPN"
 echo -e "     ${BICyan}[${BIWhite}08${BICyan}] Set up Autokill SSH"
 echo -e "     ${BICyan}[${BIWhite}09${BICyan}] Cek Users Who Do Multi Login SSH"
+echo -e "     ${BICyan}[${BIWhite}10${BICyan}] LOCK AKUN SSH"
+echo -e "     ${BICyan}[${BIWhite}11${BICyan}] UNLOCK AKUN SSH"
 
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
@@ -134,6 +136,8 @@ case $opt in
 7) clear ; delete ; exit ;;
 8) clear ; autokill ; exit ;;
 9) clear ; ceklim ; exit ;;
+10) clear ; user-lock ; exit ;;
+11) clear ; user-unlock ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
