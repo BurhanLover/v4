@@ -22,7 +22,7 @@ wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
 wget -O slow "https://raw.githubusercontent.com/Andyyuda/ver3/main/slow.sh"
 wget -O usernew "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/trial.sh"
-wget -O menu-ssh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu.ssh.sh"
+wget -O menu-ssh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-ssh.sh"
 
 # chomad
 wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/v4/main/up.sh" && chmod +x /usr/bin/up
