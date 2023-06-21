@@ -37,4 +37,4 @@ chmod +x trial
 chmod +x genssl
 echo -e " [INFO] Update Successfully"
 sleep 2
-exit
+menu
