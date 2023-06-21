@@ -6,7 +6,7 @@ echo -e " [INFO] Downloading Update File"
 sleep 2
 # hapus menu
 rm -rf menu
-rm -rf menu-ssh
+rm -rf menus-ssh
 rm -rf usernew
 rm -rf trial
 rm -rf up
@@ -21,6 +21,7 @@ wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
 wget -O slow "https://raw.githubusercontent.com/Andyyuda/ver3/main/slow.sh"
 wget -O usernew "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/trial.sh"
+wget -O menus-ssh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menus-ssh.sh"
 
 # chomad
 wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/ver3/main/up.sh" && chmod +x /usr/bin/up
