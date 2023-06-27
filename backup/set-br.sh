@@ -38,7 +38,7 @@ port 587
 auth on
 user andyyuda51@gmail.com
 from andyyuda51@gmail.com
-password bbzfejsrfntthudz 
+password ennfnhibitnanmfh 
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
