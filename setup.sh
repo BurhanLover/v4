@@ -135,6 +135,7 @@ read -rp "Input ur domain : " -e pp
         echo -e "
         Nothing input for domain!
         Then a random domain will be created"
+	wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
     else
         echo "$pp" > /root/scdomain
 	echo "$pp" > /etc/xray/scdomain
