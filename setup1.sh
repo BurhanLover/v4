@@ -143,7 +143,10 @@ read -rp "Input ur domain : " -e pp
 	echo $pp > /root/domain
         echo "IP=$pp" > /var/lib/SIJA/ipvps.conf
     fi
-    
+read -rp "Input ur ns-domain : " -e nsdomen
+echo "$nsdomen" > /etc/xray/nsdomain
+echo "$nsdomen" > /root/nsdomain
+clear    
 #install ssh ovpn
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS               $NC"
@@ -168,6 +171,14 @@ sleep 2
 clear
 wget https://raw.githubusercontent.com/Andyyuda/v4/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/Andyyuda/v4/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+clear
+#Instal SLOWNS
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green          Install SLOWDNS              $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
+wget -q -O slow.sh https://raw.githubusercontent.com/Andyyuda/xray-ssh/main/slow.sh && chmod +x slow.sh && ./slow.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
