@@ -167,7 +167,8 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "X-Auth-Key: ${CF_KEY}" \
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
-     
+# // Success
+echo -e "${OKEY} Your Domain : $domain"     
     else
         echo "$pp" > /root/scdomain
 	echo "$pp" > /etc/xray/scdomain
