@@ -135,7 +135,6 @@ read -rp "Input ur domain : " -e pp
         echo -e "
         Nothing input for domain!
         Then a random domain will be created"
-        # // String / Request Data
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=scarzvpn.live
 SUB_DOMAIN=${sub}.scarzvpn.live
