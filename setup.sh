@@ -13,6 +13,8 @@ tyblue() { echo -e "\\033[36;1m${*}\\033[0m"; }
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
+# domain random
+CDN="https://raw.githubusercontent.com/Andyyuda/v4/main/ssh"
 cd /root
 if [ "${EUID}" -ne 0 ]; then
 echo "You need to run this script as root"
@@ -112,24 +114,35 @@ echo ""
 wget -q https://raw.githubusercontent.com/Andyyuda/v4/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-yellow "Add Domain for vmess/vless/trojan dll"
 echo " "
-read -rp "Input ur domain : " -e pp
-if [ -z $pp ]; then
-echo -e "
-Nothing input for domain!
-Then a random domain will be created"
-else
-echo "$pp" > /root/scdomain
-echo "$pp" > /etc/xray/scdomain
-echo "$pp" > /etc/xray/domain
-echo "$pp" > /etc/v2ray/domain
-echo $pp > /root/domain
-echo "IP=$pp" > /var/lib/SIJA/ipvps.conf
-fi
-read -rp "Input ur ns-domain : " -e nsdomen
-echo "$nsdomen" > /etc/xray/nsdomain
-echo "$nsdomen" > /root/nsdomain
+clear
+    echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
+    echo -e "$BYellow----------------------------------------------------------$NC"
+    echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
+    echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
+    echo -e "$BYellow----------------------------------------------------------$NC"
+    read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
+	if test $dns -eq 1; then
+    clear
+    apt install jq curl -y
+    wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
+    chmod +x /root/cf
+    bash /root/cf | tee /root/install.log
+    print_success "Domain Random Done"
+	elif test $dns -eq 2; then
+    read -rp "Enter Your Domain / masukan domain : " dom
+    echo "IP=$dom" > /var/lib/SIJA/ipvps.conf
+    echo "$dom" > /root/scdomain
+	echo "$dom" > /etc/xray/scdomain
+	echo "$dom" > /etc/xray/domain
+	echo "$dom" > /etc/v2ray/domain
+	echo "$dom" > /root/domain
+    else 
+    echo "Not Found Argument"
+    exit 1
+    fi
+	echo -e "${BGreen}Done!${NC}"
+    sleep 2
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS               $NC"
@@ -158,7 +171,7 @@ echo -e "$green          Install SLOWDNS              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget -q -O slow.sh https://raw.githubusercontent.com/Andyyuda/xray-ssh/main/slow.sh && chmod +x slow.sh && ./slow.sh
+#wget -q -O slow.sh https://raw.githubusercontent.com/Andyyuda/xray-ssh/main/slow.sh && chmod +x slow.sh && ./slow.sh
 clear
 cat> /root/.profile << END
 if [ "$BASH" ]; then
