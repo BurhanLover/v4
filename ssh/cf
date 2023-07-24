@@ -56,14 +56,14 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
 -H "Content-Type: application/json" \
 --data '{"type":"NS","name":"'${NS_DOMAIN}'","content":"'${SUB_DOMAIN}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
-echo "Host NS : $NS_DOMAIN
+echo "Host NS : $NS_DOMAIN"
 echo "IP=$SUB_DOMAIN" > /var/lib/SIJA/ipvps.conf
 echo "$SUB_DOMAIN" > /root/domain
+echo "$NS_DOMAIN" > /root/nsdomain
 echo "$SUB_DOMAIN" > /etc/xray/domain
 echo "$SUB_DOMAIN" > /etc/v2ray/domain
 echo "$SUB_DOMAIN" > /root/scdomain
 echo "$SUB_DOMAIN" > /root/xray/scdomain
-echo "$NS_DOMAIN" > /root/nsdomain
 echo -e "Done Record Domain= ${SUB_DOMAIN} For VPS"
 rm -rf cf
 sleep 1
