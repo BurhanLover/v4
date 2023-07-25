@@ -125,7 +125,7 @@ wget -q -O /usr/bin/certv2ray "https://raw.githubusercontent.com/Andyyuda/v4/mai
 wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-set.sh"
 wget -q -O /usr/bin/about "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/about.sh"
 wget -q -O /usr/bin/add4 "https://raw.githubusercontent.com/Andyyuda/permission/main/add4.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Andyyuda/v4/main/backup/menu-backup.sh"
+wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-backup.sh"
 wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/trial.sh"
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/usernew.sh"
 chmod +x /usr/bin/usernew
