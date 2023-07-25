@@ -253,6 +253,13 @@ export sem=$( curl -s https://raw.githubusercontent.com/artanodrop/permission/ma
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
+echo ""
+echo -e "$green                              ╔╗╔═╗╔╗   ╔═╗╔═╗╔═══╗╔╗╔═╗$NC"
+echo -e "$green                              ║║║╔╝║║   ║║╚╝║║║╔═╗║║║║╔╝$NC"
+echo -e "$green                              ║╚╝╝ ║║   ║╔╗╔╗║║╚═╝║║╚╝╝ $NC"
+echo -e "$green                              ║╔╗║ ║║ ╔╗║║║║║║║╔══╝║╔╗║ $NC"
+echo -e "$green                              ║║║╚╗║╚═╝║║║║║║║║║   ║║║╚╗$NC"
+echo -e "$green                              ╚╝╚═╝╚═══╝╚╝╚╝╚╝╚╝   ╚╝╚═╝$NC"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
