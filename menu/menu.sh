@@ -253,7 +253,6 @@ export sem=$( curl -s https://raw.githubusercontent.com/artanodrop/permission/ma
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "$green                 ▌║█║▌│║▌│║▌║▌█║KLMPK ▌│║▌║▌│║║▌█║▌║█ ${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
@@ -303,6 +302,7 @@ echo -e "     ${BICyan}[${BIWhite}14${BICyan}] Update Script "
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "\E[44;1;39m                     ⇱ AndyYuda Store ⇲                         \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "$green                  ▌║█║▌│║▌│║▌║▌█║KLMPK ▌│║▌║▌│║║▌█║▌║█ ${NC}"
 
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │$NC ${BICyan}HARI ini${NC}: ${red}$ttoday$NC ${BICyan}KEMARIN${NC}: ${red}$tyest$NC ${BICyan}BULAN${NC}: ${red}$tmon$NC $NC"
