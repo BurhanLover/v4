@@ -128,6 +128,21 @@ wget -q -O /usr/bin/add4 "https://raw.githubusercontent.com/Andyyuda/permission/
 wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-backup.sh"
 wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/trial.sh"
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/usernew.sh"
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/add-tr.sh"
+wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/del-tr.sh"
+wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/cek-tr.sh"
+wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/trialtrojan.sh"
+wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/renew-tr.sh"
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/add-ws.sh"
+wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/del-ws.sh"
+wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/cek-ws.sh"
+wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/renew-ws.sh"
+wget -q -O /usr/bin/trialvmess "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/trialvmess.sh"
+wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/add-vless.sh"
+wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/del-vless.sh"
+wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/cek-vless.sh"
+wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/renew-vless.sh"
+wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/trialvless.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/auto-reboot
 chmod +x /usr/bin/restart
@@ -152,6 +167,21 @@ chmod +x /usr/bin/add4
 chmod +x /usr/bin/menu-backup
 chmod +x /usr/bin/trial
 chmod +x /usr/bin/usernew
+chmod +x /usr/bin/add-tr
+chmod +x /usr/bin/del-tr
+chmod +x /usr/bin/cek-tr
+chmod +x /usr/bin/trialtrojan
+chmod +x /usr/bin/renew-tr
+chmod +x /usr/bin/add-ws 
+chmod +x /usr/bin/del-ws
+chmod +x /usr/bin/cek-ws
+chmod +x /usr/bin/renew-ws
+chmod +x /usr/bin/trialvmess
+chmod +x /usr/bin/add-vless
+chmod +x /usr/bin/del-vless
+chmod +x /usr/bin/cek-vless
+chmod +x /usr/bin/renew-vless
+chmod +x /usr/bin/trialvless
 clear
 echo -e ""
 echo -e "\e[0;32mDownloaded successfully!\e[0m"
