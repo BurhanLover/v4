@@ -201,6 +201,14 @@ wget https://raw.githubusercontent.com/Andyyuda/v4/main/xray/ins-xray.sh && chmo
 #wget https://raw.githubusercontent.com/Andyyuda/v4/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/Andyyuda/v4/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
+#install limit xray
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green       Install Limit Xray               $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
+wget -q https://raw.githubusercontent.com/Andyyuda/v5/main/ssh/limit.sh;chmod +x limit.sh;./limit.sh
+clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install SLOWDNS              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
