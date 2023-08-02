@@ -107,6 +107,12 @@ apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
 echo -e "[ ${green}INFO${NC} ] Aight good ... installation file is ready"
 sleep 2
+echo -e  "\033[1;31m============================================\033[0m"
+echo -e  "\033[0;33m    TERIMA KASIH SUDAH MENGGUNAKAN SCRIPT   \033[0;33m"
+echo -e  "\033[0;33m    MOD DARI SAYA BY ANDY YUDA              \033[0;33m"
+echo -e  "\033[0;33m          ADA PERTANYAAN CHAT               \033[0;33m"
+echo -e  "\033[0;33m    WA :     082131861788                   \033[0;33m"
+echo -e  "\033[1;31m============================================\033[0m"
 echo -ne "[ ${green}INFO${NC} ] Check permission : "
 mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
